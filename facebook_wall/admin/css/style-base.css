@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+html,body {
+	position:relative;
+    width:100%;
+    height:100%;
+	font-family: ""メイリオ" , Meiryo , Osaka , sans-serif;
+	//background: url(../img/img_dot_bg.gif) repeat;
+}
+#wrap{
+   // position:relative;
+    width:100%;
+    height:100%;
+    background-repeat: repeat;
+}
+#wrap #header{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:150px;
+    height:100%;
+    font-size:20px;
+}
+#wrap #header ul li{
+    clear:both;
+}
+#wrap #content{
+    position:absolute;
+    top:0px;
+    left:150px;
+    width:100%;
+    height:100%;
+    font-size:20px;
+}
+#wrap #content p {
+    position:fixed;
+    left:170px;
+}
+#wrap #content #pager,#edition{
+    position:fixed;
+    left:300px;
+}
+#wrap #content ul li{
+    float:left;
+}
+.selected , .hover{
+    font-weight:bolder;
+}
+#subhead{
+    position:absolute;
+    margin-bottom:0;
+}
+#data{
+	margin:0;
+	padding:0;
+    position:absolute;
+    top:50px;
+    width:100%;
+}
+#edition{
+	float:left;
+    margin-left:450px;
+}
+#grayLayer{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:black;
+    opacity: 0.60;
+    filter:alpha(opacity=60);
+    display:none;
+}
+div#overLayer{
+    position:absolute;
+    background:#F0FFFF;
+    width:1000px;
+    height:850px;
+    display:none;
+}
+* html #grayLayer{
+    position:absolute;
+}
+* html #overLayer{
+    position:absolute;
+}
+dl{
+    width:1000px;
+    height:800px;
+}
+dl dt {
+    border-left:5px solid #7CADB6;
+    border-bottom:1px solid #7CADB6;
+    font-size:20px;
+    margin:0;
+    padding:5px;
+}
+dl dt span{
+    color:red;
+    font-weight:bold;
+    font-size:18px;
+}
+dl dd{
+    font-size:18px;
+    margin:0;
+    padding:10px;
+}
+dl dd input{
+    position:relative;
+    //z-index:2;
+}
+dl dd label{
+    position:relative;
+    padding:5px 5px 5px 25px;
+    margin : 0 5px 0 -25px;
+    margin-left:-25px;
+    position:relative;
+    //z-index:1;
+}
+dl dd.error input , 
+dl dd.error textarea , 
+dl dd.error label {
+    background:#FFCCCC;
+}
+* html dl dd.error label {
+    background:none;
+}
+*+html dl dd.error label{
+    background:none;
+}
+dl dd p.error{
+    margin:0;
+    color:red;
+    font-weight:bold;
+    margin-bottom:1em;
+}
+#button{
+    margin:2px;
+    text-align:right;
+}
+#edition{
+	position:relative;
+	right:0;
+}
